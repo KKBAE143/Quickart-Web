@@ -542,7 +542,6 @@ const ProductDisplayPage = () => {
           title="Recently Viewed Products"
         />
       </div>
-    </section>
     </>
   )
 }

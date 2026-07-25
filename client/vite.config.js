@@ -46,12 +46,9 @@ export default defineConfig({
     assetsInlineLimit: 4096, // 4kb - inline small assets
     chunkSizeWarningLimit: 500,
     // Minify options
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Remove console.log in production
-        drop_debugger: true,
-      },
+    minify: 'esbuild',
+    esbuild: {
+      drop: ['console', 'debugger'],
     },
   },
   // Optimize deps
