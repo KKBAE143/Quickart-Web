@@ -128,11 +128,16 @@ const ProductListPage = () => {
     }
   }
 
+  // Get category image for OG preview (first matching category)
+  const currentCategory = AllCategory.find(c => c._id === categoryId)
+  const categoryImage = currentCategory?.image || ''
+
   return (
     <section className='sticky top-24 lg:top-20 bg-gray-50'>
       <SEO
         title={subCategoryName || 'Products'}
         description={`Shop ${subCategoryName || 'products'} online on Quickart. Wide selection, best prices, and 10-minute delivery.`}
+        image={categoryImage}
         url={window.location.pathname}
         type="collection"
         category={subCategoryName}

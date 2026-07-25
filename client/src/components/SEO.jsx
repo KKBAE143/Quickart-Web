@@ -1,9 +1,45 @@
 import { Helmet } from 'react-helmet-async'
 
 const SITE_NAME = 'Quickart'
-const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://quickart.app'
+const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://quickart.com'
 const DEFAULT_IMAGE = '/logo.png'
 const TWITTER_HANDLE = '@quickart'
+
+// OG image standard dimensions (Facebook, WhatsApp, Twitter)
+const OG_IMAGE_WIDTH = 1200
+const OG_IMAGE_HEIGHT = 630
+
+/**
+ * Resolve the final absolute URL for an image.
+ * - If it's already an absolute URL (http), use as-is
+ * - If it's a Cloudinary URL, add OG-friendly transformations
+ * - Otherwise, prepend SITE_URL
+ */
+function resolveOgImage(image) {
+  if (!image) return `${SITE_URL}${DEFAULT_IMAGE}`
+
+  if (image.startsWith('http')) {
+    // Cloudinary — add transformations for optimal OG preview size
+    if (image.includes('res.cloudinary.com')) {
+      // Insert transformation params after '/image/upload/'
+      const transform = `w_${OG_IMAGE_WIDTH},h_${OG_IMAGE_HEIGHT},c_fill,f_auto,q_auto`
+      const uploadMarker = '/image/upload/'
+      const idx = image.indexOf(uploadMarker)
+      if (idx !== -1) {
+        const base = image.slice(0, idx + uploadMarker.length)
+        const rest = image.slice(idx + uploadMarker.length)
+        // Avoid double-transformations (if already has params)
+        if (rest.startsWith('v') || /^\d+/.test(rest)) {
+          return `${base}${transform}/${rest}`
+        }
+      }
+    }
+    return image
+  }
+
+  // Relative path — prepend site URL
+  return `${SITE_URL}${image}`
+}
 
 /**
  * SEO component — injects meta tags, Open Graph, Twitter Cards, and JSON-LD.
@@ -34,6 +70,8 @@ const SEO = ({
     ? `${noindex ? 'noindex' : 'index'}, ${nofollow ? 'nofollow' : 'follow'}`
     : 'index, follow'
 
+  const ogImageUrl = resolveOgImage(image)
+
   return (
     <Helmet>
       {/* ===== Standard Meta Tags ===== */}
@@ -46,7 +84,9 @@ const SEO = ({
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image?.startsWith('http') ? image : `${SITE_URL}${image}`} />
+      <meta property="og:image" content={ogImageUrl} />
+      <meta property="og:image:width" content={OG_IMAGE_WIDTH} />
+      <meta property="og:image:height" content={OG_IMAGE_HEIGHT} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content={type === 'product' ? 'product' : 'website'} />
       <meta property="og:locale" content="en_IN" />
@@ -56,7 +96,7 @@ const SEO = ({
       <meta name="twitter:site" content={TWITTER_HANDLE} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image?.startsWith('http') ? image : `${SITE_URL}${image}`} />
+      <meta name="twitter:image" content={ogImageUrl} />
 
       {/* ===== Article Meta ===== */}
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
