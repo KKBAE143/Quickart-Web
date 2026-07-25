@@ -1,0 +1,29 @@
+{
+  "name": "Quickart - Quick Commerce",
+  "short_name": "Quickart",
+  "description": "Order fresh groceries, fruits, vegetables & daily essentials online. Get free delivery in 10 minutes!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#DC2626",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "food", "lifestyle"],
+  "lang": "en-IN",
+  "dir": "ltr"
+}
+
