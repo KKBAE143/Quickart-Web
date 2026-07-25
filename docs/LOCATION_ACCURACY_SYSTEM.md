@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the production-grade location accuracy system implemented in Quickart, following best practices used by Blinkit, Zepto, and Instamart.
+This document describes the production-grade location accuracy system implemented in Quickart, following industry best practices for quick commerce platforms.
 
 ## Key Improvements Made
 

@@ -6,7 +6,7 @@ import { socketService } from '../config/socket';
  *
  * Provides isolated real-time location tracking for a specific rider.
  * Each hook instance subscribes only to updates for the specified rider,
- * similar to how Blinkit/Zepto track individual delivery partners.
+ * similar to how leading quick commerce platforms track individual delivery partners.
  *
  * Features:
  * - Isolated socket subscription per rider

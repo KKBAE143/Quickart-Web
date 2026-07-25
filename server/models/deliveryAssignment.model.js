@@ -4,7 +4,7 @@ import mongoose from "mongoose";
  * Delivery Assignment Schema
  *
  * Tracks order broadcasts and assignments to delivery agents
- * Inspired by Swiggy, Zepto, Blinkit assignment systems
+ * Industry-standard delivery assignment system
  *
  * Features:
  * - Priority-based rider scoring

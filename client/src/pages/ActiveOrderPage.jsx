@@ -25,7 +25,7 @@ import SummaryApi from '../common/SummaryApi';
 import RiderNavigationMap from '../components/RiderNavigationMap';
 
 /**
- * Active Order Page - Production-level Blinkit/Zepto Style
+ * Active Order Page - Production-level quick commerce style
  *
  * Clear two-phase delivery flow:
  * PHASE 1: PICKUP - Navigate to store, collect order

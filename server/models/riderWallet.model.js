@@ -4,7 +4,7 @@ import mongoose from "mongoose";
  * Rider Wallet Model
  *
  * Tracks delivery agent's earnings, transactions, and settlements.
- * Based on quick commerce platforms (Zepto, Blinkit, Instamart) flow:
+ * Standard quick commerce wallet flow:
  * - Per-order earnings are added to wallet in real-time
  * - All cash is collected from store at end of day
  * - No online payment to riders - all amounts settled at store

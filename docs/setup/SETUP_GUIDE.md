@@ -1,4 +1,4 @@
-# BlinkIt Clone - Setup Guide
+# Quickart - Setup Guide
 
 ## ✅ Installation Complete!
 
@@ -194,7 +194,7 @@ Email templates are located in `server/utils/`:
 - `forgotPasswordTemplate.js` - For password reset
 
 ### Upload Configuration
-Images are uploaded to Cloudinary with folder name "binkeyit". You can change this in `server/utils/uploadImageClodinary.js`.
+Images are uploaded to Cloudinary with folder name "Quickart". You can change this in `server/utils/uploadImageClodinary.js`.
 
 ## 🤝 Support
 

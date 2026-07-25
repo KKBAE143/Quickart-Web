@@ -271,7 +271,7 @@ io.on('connection', (socket) => {
 
     // ============================================================================
     // INDIVIDUAL RIDER TRACKING (For admin grid view with per-rider maps)
-    // Similar to Blinkit/Zepto/Instamart fleet management
+    // Production-level rider tracking for delivery fleet management
     // ============================================================================
 
     // Admin subscribes to track a specific rider

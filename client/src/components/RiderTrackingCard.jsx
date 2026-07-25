@@ -19,7 +19,7 @@ import { DisplayPriceInRupees } from '../utils/DisplayPriceInRupees';
  * Individual rider tracking card with its own Google Map instance.
  * Uses RiderMapWidget for smooth real-time tracking with Uber/Zomato style animations.
  *
- * Production-level features like Blinkit/Zepto/Instamart:
+ * Production-level features for real-time delivery tracking:
  * - Isolated real-time location subscription via RiderMapWidget
  * - Smooth marker animation
  * - ETA and distance calculations

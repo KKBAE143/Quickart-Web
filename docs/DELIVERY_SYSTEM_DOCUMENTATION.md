@@ -16,7 +16,7 @@
 
 ## Overview
 
-The Quickart Delivery Partner System enables end-to-end delivery management for quick commerce operations. Inspired by industry leaders like Zepto, Blinkit, and Swiggy Instamart, this system provides:
+The Quickart Delivery Partner System enables end-to-end delivery management for quick commerce operations, providing:
 
 - **Delivery Partner Mobile Dashboard**: Accept/decline orders, navigate to store and customer, manage earnings
 - **Real-time Location Tracking**: Live GPS tracking visible to both admin and customers

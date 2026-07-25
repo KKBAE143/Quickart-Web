@@ -25,7 +25,7 @@ import { socketService } from '../config/socket';
 /**
  * LiveTrackingMap Component
  *
- * Production-level live rider tracking map similar to Zomato, Uber, Blinkit, Zepto.
+ * Production-level live rider tracking map with real-time delivery partner tracking.
  *
  * Features:
  * - Smooth marker animation with interpolation (no jumping)

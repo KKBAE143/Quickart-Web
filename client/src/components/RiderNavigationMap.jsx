@@ -20,7 +20,7 @@ import { useGoogleMapsContext } from '../provider/GoogleMapsProvider';
  * RiderNavigationMap Component
  *
  * Production-level navigation map for delivery riders.
- * Similar to Zomato, Swiggy, Blinkit rider apps.
+ * Production-level navigation map for delivery riders.
  *
  * Features:
  * - Two-phase delivery: Store pickup → Customer delivery

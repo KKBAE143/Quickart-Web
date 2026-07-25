@@ -7,7 +7,7 @@ import toast from 'react-hot-toast'
 import { detectLocationWithPriority, LOCATION_METHODS } from '../utils/LocationService'
 
 /**
- * LocationModal - Blinkit-style location selector
+ * LocationModal - Quick commerce-style location selector
  * Features:
  * - Auto-detect current location with GPS
  * - Search addresses with Google Places Autocomplete

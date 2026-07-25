@@ -131,7 +131,7 @@ const Header = () => {
                             </Link>
                         </div>
 
-                        {/** Location Selector - Blinkit Style */}
+                        {/** Location Selector - Quick Commerce Style */}
                         <button 
                             onClick={() => setShowLocationModal(true)}
                             className='hidden lg:flex items-center gap-2 px-3 py-2 hover:bg-gray-50 rounded-lg transition-colors max-w-[280px] group'

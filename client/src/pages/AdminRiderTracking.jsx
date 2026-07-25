@@ -39,7 +39,7 @@ import RiderTrackingCard from '../components/RiderTrackingCard';
 /**
  * Admin Rider Tracking Dashboard
  *
- * Production-level multi-rider tracking system similar to Blinkit/Zepto/Instamart.
+ * Production-level multi-rider tracking system for delivery fleet management.
  *
  * Features:
  * - Multiple view modes: Grid (individual maps), List, Master Map

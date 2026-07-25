@@ -6,7 +6,7 @@ import { createContext, useContext, useState, useEffect, useRef } from 'react';
  * Provides global Google Maps loading state and ensures the script
  * is loaded once and shared across all map components.
  *
- * Production-level implementation like Blinkit/Zepto/Uber.
+ * Production-level Google Maps provider for quick commerce platforms.
  */
 
 const GoogleMapsContext = createContext({

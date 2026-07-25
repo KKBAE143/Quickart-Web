@@ -6,7 +6,7 @@ import orderAssignmentService from "../services/orderAssignment.service.js";
  * Order Assignment Controller
  *
  * Admin endpoints for managing order assignments to delivery agents
- * Industry-standard implementation inspired by Swiggy, Zepto, Blinkit
+ * Industry-standard implementation for quick commerce order assignment
  */
 
 /**

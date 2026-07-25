@@ -324,7 +324,7 @@ Added a dedicated "Review Your Items" section showing:
 - ✅ Minimal friction
 - ✅ Mobile-first design
 
-### Zepto/Blinkit
+### Quick Commerce
 - ✅ Express delivery badge
 - ✅ 30-45 min estimate
 - ✅ Simple, fast checkout

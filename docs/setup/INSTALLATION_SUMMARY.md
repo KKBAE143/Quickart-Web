@@ -2,7 +2,7 @@
 
 ## 🎉 Setup Summary
 
-Your BlinkIt Clone e-commerce website has been successfully set up!
+Your Quickart quick commerce platform has been successfully set up!
 
 ### ✅ Completed Tasks
 
@@ -197,7 +197,7 @@ Run these checks:
 ## 🎯 Project Structure
 
 ```
-BlinkIt-Clone-Full-Stack-Ecommerce/
+Quickart/
 ├── client/                     # React frontend (Port 5173)
 │   ├── src/
 │   │   ├── components/        # UI components

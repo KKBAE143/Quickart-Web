@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide - BlinkIt Clone
+# 🚀 Quick Start Guide - Quickart
 
 ## ✅ Setup Status
 
@@ -63,7 +63,7 @@ Client runs at: http://localhost:5173
 ## 📂 Files Created
 
 ```
-BlinkIt-Clone-Full-Stack-Ecommerce/
+Quickart/
 ├── client/
 │   └── .env              ← Client environment variables
 ├── server/

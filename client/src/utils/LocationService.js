@@ -1,7 +1,7 @@
 /**
  * LocationService.js - Production-Grade Location Detection
  *
- * Industry-standard implementation used by Blinkit, Zepto, Instamart.
+ * Industry-standard location detection for quick commerce platforms.
  *
  * Key Features:
  * 1. Progressive GPS Refinement - Takes multiple readings, keeps best
@@ -61,7 +61,7 @@ const CACHE_DURATION = 30000; // 30 seconds (reduced for freshness)
 /**
  * Detect location with progressive GPS refinement (Industry Standard)
  *
- * This is what Blinkit/Zepto/Instamart use:
+ * This is the industry-standard approach used by leading quick commerce platforms:
  * 1. Start GPS watch
  * 2. Collect multiple readings over 3-5 seconds
  * 3. Keep the reading with best accuracy
@@ -177,7 +177,7 @@ export async function detectLocationWithPriority(options = {}) {
 /**
  * Progressive GPS Detection - Takes multiple readings, returns best one
  *
- * This is what makes Blinkit/Zepto so accurate:
+ * This is what makes professional delivery platforms so accurate:
  * - GPS needs time to "warm up" and get satellite lock
  * - First reading might be ±500m, but after 3-4 seconds it's ±20m
  * - We collect readings over 3-5 seconds and keep the best

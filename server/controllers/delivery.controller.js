@@ -14,7 +14,7 @@ import smsProvider from "../services/sms/index.js";
  * Delivery Controller
  *
  * Comprehensive delivery management system based on:
- * - Zepto, Blinkit, Instamart, Swiggy, Dunzo patterns
+ * - Leading quick commerce delivery patterns
  *
  * Flow:
  * 1. Rider logs in and goes online

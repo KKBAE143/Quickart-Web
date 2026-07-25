@@ -10,7 +10,7 @@ import StoreLocationModel from "../models/storeLocation.model.js";
  * Industry-standard order assignment system inspired by:
  * - Swiggy: Proximity-based assignment with acceptance timeout
  * - Zepto: Instant assignment with priority scoring
- * - Blinkit: Zone-based rider allocation
+ * - Quick commerce: Zone-based rider allocation
  * - Dunzo: Multi-factor rider scoring
  *
  * Features:

@@ -38,7 +38,7 @@ import {
 import { cn } from '@/lib/utils'
 
 /**
- * ORDER MANAGEMENT - Zepto/Blinkit Style with Broadcast Feature
+ * ORDER MANAGEMENT - Quick Commerce Style with Broadcast Feature
  *
  * Simple Flow:
  * 1. NEW ORDERS (Confirmed) - Need to be packed
