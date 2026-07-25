@@ -25,6 +25,7 @@ import { Heart } from 'lucide-react'
 import { addToWishlist, removeFromWishlist } from '../store/wishlistSlice'
 import RecommendedProducts from '../components/RecommendedProducts'
 import RecentlyViewed, { addToRecentlyViewed } from '../components/RecentlyViewed'
+import SEO from '../components/SEO'
 
 const ProductDisplayPage = () => {
   const params = useParams()
@@ -226,6 +227,26 @@ const ProductDisplayPage = () => {
   console.log("product data",data)
   return (
     <>
+      <SEO
+        title={data?.name || 'Product'}
+        description={data?.description ? data.description.substring(0, 160) : 'Shop for groceries and essentials on Quickart'}
+        image={data?.image?.[0] || ''}
+        url={window.location.pathname}
+        type="product"
+        product={{
+          name: data?.name,
+          description: data?.description,
+          image: data?.image,
+          price: data?.price,
+          discount: data?.discount,
+          stock: data?.stock,
+          sku: data?._id,
+          brand: data?.brand,
+          category: data?.category?.[0]?.name,
+          rating: data?.rating,
+          reviewCount: data?.reviewCount,
+        }}
+      />
     <section className='container mx-auto p-3 md:p-4 lg:p-6 grid lg:grid-cols-2 gap-4 lg:gap-6'>
         {/* Image Gallery */}
         <div className=''>

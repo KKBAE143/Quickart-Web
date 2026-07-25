@@ -5,6 +5,7 @@ import {Link, useNavigate} from 'react-router-dom'
 import CategoryWiseProductDisplay from '../components/CategoryWiseProductDisplay'
 import RecommendedProducts from '../components/RecommendedProducts'
 import RecentlyViewed from '../components/RecentlyViewed'
+import SEO from '../components/SEO'
 
 const Home = () => {
   const loadingCategory = useSelector(state => state.product.loadingCategory)
@@ -48,6 +49,10 @@ const Home = () => {
 
   return (
    <section className='bg-gray-50'>
+      <SEO
+        title="Online Grocery Shopping - Fresh & Fast Delivery"
+        description="Quickart — Order groceries, essentials, and more online with 10-minute delivery in your city. Best prices, wide assortment, and superfast delivery from dark stores near you."
+      />
       {/* Hero Banner */}
       <div className='container mx-auto px-2 md:px-4 py-3 md:py-4'>
           <div 

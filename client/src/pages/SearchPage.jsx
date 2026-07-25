@@ -10,6 +10,7 @@ import { useLocation } from 'react-router-dom'
 import { SlidersHorizontal, X } from 'lucide-react'
 import { useSelector } from 'react-redux'
 import noDataImage from '../assets/nothing here yet.webp'
+import SEO from '../components/SEO'
 
 const SearchPage = () => {
   const [data,setData] = useState([])
@@ -112,6 +113,12 @@ const SearchPage = () => {
 
   return (
     <section className='bg-gray-50 min-h-screen pt-20'>
+      <SEO
+        title={searchText ? `Search results for "${searchText}"` : 'Search Products'}
+        description={searchText ? `Find "${searchText}" on Quickart. Shop groceries, essentials, and more with fast delivery.` : 'Search for groceries, essentials, and more on Quickart.'}
+        url={window.location.pathname}
+        noindex={true}
+      />
       <div className='container mx-auto p-3 md:p-4'>
         <div className='grid grid-cols-1 lg:grid-cols-[280px,1fr] gap-4'>
           {/* Mobile Filter Button */}

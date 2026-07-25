@@ -6,6 +6,7 @@ import Axios from '../utils/Axios';
 import SummaryApi from '../common/SummaryApi';
 import AxiosToastError from '../utils/AxiosToastError';
 import { Link, useNavigate } from 'react-router-dom';
+import SEO from '../components/SEO'
 
 const Register = () => {
     const [data, setData] = useState({
@@ -123,6 +124,11 @@ const Register = () => {
     }
     return (
         <section className='w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 via-white to-red-50 px-4 py-8'>
+            <SEO
+              title="Create Account - Customer Registration"
+              description="Create your Quickart account for easy ordering, fast checkout, and real-time delivery tracking. Register now!"
+              noindex={true}
+            />
             <div className='bg-white w-full max-w-md rounded-2xl shadow-2xl border border-gray-100 overflow-hidden'>
                 {/* Header Section */}
                 <div className='bg-gradient-to-r from-red-600 to-red-700 px-8 py-6 text-center'>

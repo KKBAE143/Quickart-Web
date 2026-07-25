@@ -9,6 +9,7 @@ import ProductFilters from '../components/ProductFilters'
 import { useSelector } from 'react-redux'
 import { valideURLConvert } from '../utils/valideURLConvert'
 import { SlidersHorizontal, X } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const ProductListPage = () => {
   const [data, setData] = useState([])
@@ -129,6 +130,13 @@ const ProductListPage = () => {
 
   return (
     <section className='sticky top-24 lg:top-20 bg-gray-50'>
+      <SEO
+        title={subCategoryName || 'Products'}
+        description={`Shop ${subCategoryName || 'products'} online on Quickart. Wide selection, best prices, and 10-minute delivery.`}
+        url={window.location.pathname}
+        type="collection"
+        category={subCategoryName}
+      />
       <div className='container sticky top-24 mx-auto'>
         <div className='grid grid-cols-1 lg:grid-cols-[280px,1fr] gap-4'>
           {/* Mobile Filter Button */}

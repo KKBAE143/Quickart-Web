@@ -9,6 +9,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import fetchUserDetails from '../utils/fetchUserDetails';
 import { useDispatch } from 'react-redux';
 import { setUserDetails } from '../store/userSlice';
+import SEO from '../components/SEO'
 
 const Login = () => {
     const [data, setData] = useState({
@@ -132,6 +133,11 @@ const Login = () => {
     }
     return (
         <section className='w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 via-white to-red-50 px-4 py-8'>
+            <SEO
+              title="Sign In - Customer Login"
+              description="Sign in to your Quickart account to order groceries, track deliveries, and manage your profile."
+              noindex={true}
+            />
             <div className='bg-white w-full max-w-md rounded-2xl shadow-2xl border border-gray-100 overflow-hidden'>
                 {/* Header Section */}
                 <div className='bg-gradient-to-r from-red-600 to-red-700 px-8 py-6 text-center'>

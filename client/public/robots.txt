@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /register
+Disallow: /register-rider
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /dashboard/*
+Disallow: /delivery/*
+Disallow: /admin/*
+
+Sitemap: https://quickart.app/sitemap.xml
